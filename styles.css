@@ -67,6 +67,28 @@ body {
     color: #1D2557;
 }
 
+.food__card {
+    background-color: #F9F9F9;
+}
+.food__card__image__container {
+    width: 100%;
+}
+.food__image {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.food__card__description {
+    padding: 15px;
+}
+
+.explore__menu__text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: #1D2557;
+}
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -77,6 +99,10 @@ body {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+    }
+    .explore__menu__lists {
+        display: flex;
+        gap: 15px;
     }
 }
 
