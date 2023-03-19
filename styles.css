@@ -52,9 +52,22 @@ body {
 }
 
 .hero_img_container {
+    position: relative;
     width: 100%;
 }
+.hero__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
 
+    z-index: -4;
+}
+.hero__shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
 .hero__img {
     width: 100%;
     border-radius: 7px;
@@ -69,9 +82,11 @@ body {
 
 .food__card {
     background-color: #F9F9F9;
+    border-radius: 7px 7px 7px 7px;
 }
 .food__card__image__container {
     width: 100%;
+    border-style: none;
 }
 .food__image {
     width: 100%;
@@ -101,8 +116,42 @@ body {
         align-items: center;
     }
     .explore__menu__lists {
+        margin-top: 50px;
         display: flex;
         gap: 15px;
+        margin: 0 30px;
+    }
+    #pizza__card {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    #icecream {
+        margin-bottom: 15px;
+    }
+    #burger {
+        margin-bottom: 10px;
+    }
+    .explore__menu__container {
+        position: relative;
+    }
+    .explore__menu__gradient__bg {
+        position: absolute;
+        padding-bottom: 50px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100% 
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    .explore__menu__text {
+        padding-bottom: 50px;
     }
 }
 
@@ -122,6 +171,13 @@ body {
         width: 100%;
     }
     .hero__text {
+        font-size: 48px;
+    }
+    .explore__menu__lists {
+        gap: 25px;
+    }
+
+    .explore__menu__text {
         font-size: 48px;
     }
 }
